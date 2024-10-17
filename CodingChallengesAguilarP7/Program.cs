@@ -27,7 +27,7 @@ class Challenges
             var number3 = Console.ReadLine();
             int numberToUse3 = int.Parse(number3);
 
-        Console.WriteLine("If I convert " + "minutes to seconds. I got " + Convert(numberToUse3) + " Seconds");
+        Console.WriteLine("If I convert " +number3 "minutes to seconds. I got " + Convert(numberToUse3) + " Seconds");
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
