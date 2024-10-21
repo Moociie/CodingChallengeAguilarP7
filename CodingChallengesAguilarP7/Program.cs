@@ -1,12 +1,26 @@
 ﻿using System;
+using System.Numerics;
 
 class Challenges
 {
    
     public static void Main(string[] args)
     {
-        //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
+        Start();
+    }
+
+    public void Start()
+    {
+        
+        //Welcome the user to my program
+       Console.WriteLine("Choose a function \n To see all the available functions, type in 'Functions'")
+            var response = Console.ReadLine();
+            if (response == "Functions")
+        {
+            Console.WriteLine("Sum\n Convert\n Increase\n CircuitPower\n AgeConvert\n TriArea\n True or False\n")
+        }
+            else if (response == "Plus")
 
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
 
@@ -70,7 +84,7 @@ class Challenges
         Console.WriteLine("Insert a number, I will determine whether it is less than or equal to zero.");
         var number10 = Console.ReadLine();
         int numberToUse10 = int.Parse(number10);
-        Console.WriteLine("I have determined that the ");
+        Console.WriteLine("I have determined that it is"
        
 
     }
@@ -98,6 +112,18 @@ class Challenges
     public static float TriArea(int baseo, int Height)
     {
         return baseo * Height / 2;
+    }
+
+    public static float TrueOrFalse(int number10)
+    {
+        if(number10 <= 0)
+        {
+            number10 = true;
+        }
+        else if (number10 >= 0)
+        {
+            number10 = false;
+        }
     }
 
 }
