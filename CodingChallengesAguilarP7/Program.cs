@@ -12,13 +12,13 @@ class Challenges
 
     public void Start()
     {
-        
+
         //Welcome the user to my program
-       Console.WriteLine("Choose a function \n To see all the available functions, type in 'Functions'")
+        Console.WriteLine("Choose a function \n To see all the available functions, type in 'Functions'");
             var response = Console.ReadLine();
             if (response == "Functions")
         {
-            Console.WriteLine("Sum\n Convert\n Increase\n CircuitPower\n AgeConvert\n TriArea\n True or False\n")
+            Console.WriteLine("Sum\n Convert\n Increase\n CircuitPower\n AgeConvert\n TriArea\n True or False\n");
         }
             else if (response == "Plus")
 
@@ -41,7 +41,7 @@ class Challenges
             var number3 = Console.ReadLine();
             int numberToUse3 = int.Parse(number3);
 
-        Console.WriteLine("If I convert " +number3 "minutes to seconds. I got " + Convert(numberToUse3) + " Seconds");
+        Console.WriteLine("If I convert " + number3 + "minutes to seconds, I got " + Convert(numberToUse3) + " Seconds");
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
@@ -84,7 +84,7 @@ class Challenges
         Console.WriteLine("Insert a number, I will determine whether it is less than or equal to zero.");
         var number10 = Console.ReadLine();
         int numberToUse10 = int.Parse(number10);
-        Console.WriteLine("I have determined that it is"
+        Console.WriteLine("I have determined that it is");
        
 
     }
