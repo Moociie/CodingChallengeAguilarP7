@@ -4,26 +4,15 @@ using System.Numerics;
 class Challenges
 {
    
+
     public static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
-        Start();
-    }
-
-    public void Start()
-    {
-
         //Welcome the user to my program
-        Console.WriteLine("Choose a function \n To see all the available functions, type in 'Functions'");
-            var response = Console.ReadLine();
-            if (response == "Functions")
-        {
-            Console.WriteLine("Sum\n Convert\n Increase\n CircuitPower\n AgeConvert\n TriArea\n True or False\n");
-        }
-            else if (response == "Plus")
-
+        Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
+        var choice = Console.ReadLine();
+        int choiceInt = int.Parse(choice);
+     
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
-
         var number1 = Console.ReadLine();
         int numberToUse1 = int.Parse(number1);
 
@@ -81,10 +70,13 @@ class Challenges
 
         Console.WriteLine("Based on the information, the area of your triangle with the base of " + number8 + " and the height of " + number9 + " will be " + TriArea(baseo, Height));
 
-        Console.WriteLine("Insert a number, I will determine whether it is less than or equal to zero.");
-        var number10 = Console.ReadLine();
-        int numberToUse10 = int.Parse(number10);
-        Console.WriteLine("I have determined that it is");
+        Console.WriteLine("I will now determine if the sum of two numbers is less than 100. Innsert your first number.");
+        var number11 = Console.ReadLine();
+        int numberToUse11 = int.Parse(number11);
+        Console.WriteLine("Alright, give me your second number.");
+        var number12 = Console.ReadLine();
+        int numberToUse12 = int.Parse(number12);
+
        
 
     }
@@ -112,18 +104,6 @@ class Challenges
     public static float TriArea(int baseo, int Height)
     {
         return baseo * Height / 2;
-    }
-
-    public static float TrueOrFalse(int number10)
-    {
-        if(number10 <= 0)
-        {
-            number10 = true;
-        }
-        else if (number10 >= 0)
-        {
-            number10 = false;
-        }
     }
 
 }
