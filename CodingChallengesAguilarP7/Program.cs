@@ -9,9 +9,9 @@ class Challenges
     {
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
-        var choice = Console.ReadLine();
-        int choiceInt = int.Parse(choice);
-     
+
+        Console.WriteLine("Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100")
+
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
         var number1 = Console.ReadLine();
         int numberToUse1 = int.Parse(number1);
@@ -25,12 +25,12 @@ class Challenges
         
         Sum(numberToUse1, numberToUse2);
 
-        Console.WriteLine("I am going to convert minutes to seconds. Please enter a number to convert.");
+        Console.WriteLine("I am going to convert minutes to seconds. \n Please enter a number to convert.");
 
             var number3 = Console.ReadLine();
             int numberToUse3 = int.Parse(number3);
 
-        Console.WriteLine("If I convert " + number3 + "minutes to seconds, I got " + Convert(numberToUse3) + " Seconds");
+        Console.WriteLine("If I convert " + number3 + "minutes to seconds, I get " + Convert(numberToUse3) + " Seconds");
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
@@ -58,24 +58,30 @@ class Challenges
 
         Console.WriteLine("If your age is " + number7 + " you would have been alive for " + AgeConvert(Age));
 
-        Console.WriteLine("I will now calculate the area of a triangle. Please give me a number for the base of the triangle.");
+        Console.WriteLine("I will now calculate the area of a triangle. \n Please give me a number for the base of the triangle.");
 
         var number8 = Console.ReadLine();
-        int baseo = int.Parse(number8);
+        int Base = int.Parse(number8);
 
         Console.WriteLine("Great! Now give me a number for the triangle's height.");
 
         var number9 = Console.ReadLine();
         int Height = int.Parse(number9);
 
-        Console.WriteLine("Based on the information, the area of your triangle with the base of " + number8 + " and the height of " + number9 + " will be " + TriArea(baseo, Height));
+        Console.WriteLine("Based on the information, the area of your triangle with the base of " + number8 + " and the height of " + number9 + " will be " + TriArea(Base, Height));
 
-        Console.WriteLine("I will now determine if the sum of two numbers is less than 100. Innsert your first number.");
+        Console.WriteLine("I will now determine whether a number is less than or equal to zero. \n Insert any number of your choice.");
+        var number10 = Console.ReadLine();
+        int numberToUse10 = int.Parse(number10);
+        Console.WriteLine("I have come to the conclusion that the solution is " + LessThanOrEqualToZero(numberToUse10));
+
+        Console.WriteLine("I will now determine if the sum of two numbers is less than 100. \n Insert your first number.");
         var number11 = Console.ReadLine();
         int numberToUse11 = int.Parse(number11);
         Console.WriteLine("Alright, give me your second number.");
         var number12 = Console.ReadLine();
         int numberToUse12 = int.Parse(number12);
+        Console.WriteLine("I have determined that the solution is " + lessThan100(numberToUse11, numberToUse12));
 
        
 
@@ -101,10 +107,33 @@ class Challenges
     {
         return Age * 365;
     }
-    public static float TriArea(int baseo, int Height)
+    public static float TriArea(int Base, int Height)
     {
-        return baseo * Height / 2;
+        return float ((Base * Height) /2);
     }
+    public static bool LessThanOrEqualToZero(int number10)
+    {
+        if(number10 <= 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static bool lessThan100(int number11, int number12)
+    {
+        if((number11 + number12) < 100)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
 }
 
