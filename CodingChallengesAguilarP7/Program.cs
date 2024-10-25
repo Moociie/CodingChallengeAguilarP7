@@ -10,7 +10,7 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
-        Console.WriteLine("Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100")
+        Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100");
 
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
         var number1 = Console.ReadLine();
@@ -109,7 +109,7 @@ class Challenges
     }
     public static float TriArea(int Base, int Height)
     {
-        return float ((Base * Height) /2);
+        return ((Base * Height) /2);
     }
     public static bool LessThanOrEqualToZero(int number10)
     {
@@ -124,7 +124,7 @@ class Challenges
     }
     public static bool lessThan100(int number11, int number12)
     {
-        if((number11 + number12) < 100)
+        if(number11 + number12 < 100)
         {
             return true;
         }
