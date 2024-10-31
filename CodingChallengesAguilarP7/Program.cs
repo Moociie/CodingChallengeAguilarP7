@@ -91,6 +91,11 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
+        Console.WriteLine("I will now add something to the beginning to your sentence. \n Write anything you wish.");
+        string responsej = Console.ReadLine();
+        Console.WriteLine( GiveMeSomething(responsej));
+
+
 
 
     }
@@ -144,6 +149,11 @@ class Challenges
     public static bool IsEqual(int number13, int number14)
     {
         return number13 == number14;
+
+    }
+    public static string GiveMeSomething(string resposej)
+    {
+        return "something" + resposej;
     }
 }
 
