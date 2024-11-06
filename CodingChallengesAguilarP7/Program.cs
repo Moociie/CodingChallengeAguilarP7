@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using System.Runtime.InteropServices;
 
 class Challenges
 {
@@ -91,9 +92,13 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
-        Console.WriteLine("I will now add something to the beginning to your sentence. \n Write anything you wish.");
-        string responsej = Console.ReadLine();
-        Console.WriteLine( GiveMeSomething(responsej));
+        Console.WriteLine("I will now reply with something to your value. \n Enter anything you wish.");
+
+        // Challenge 11
+        Console.WriteLine("I will now reverse your value. Enter true or false.");
+        var response2 = Console.ReadLine();
+        int responseToUse2 = int.Parse(response2);
+
 
 
 
@@ -151,9 +156,9 @@ class Challenges
         return number13 == number14;
 
     }
-    public static string GiveMeSomething(string resposej)
+    public static bool GiveMeSomething(int response1)
     {
-        return "something" + resposej;
     }
 }
+
 
