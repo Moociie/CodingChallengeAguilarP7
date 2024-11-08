@@ -31,7 +31,7 @@ class Challenges
         var number3 = Console.ReadLine();
         int numberToUse3 = int.Parse(number3);
 
-        Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " Seconds");
+        Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
@@ -92,12 +92,15 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
-        Console.WriteLine("I will now reply with something to your value. \n Enter anything you wish.");
-
+      
         // Challenge 11
-        Console.WriteLine("I will now reverse your value. Enter true or false.");
-        var response2 = Console.ReadLine();
-        int responseToUse2 = int.Parse(response2);
+    
+
+        //Challenge 12
+        Console.WriteLine("I will now convert hours into seconds. Enter any number.");
+        var number15 = Console.ReadLine();
+        int numberToUse15 = int.Parse(number15);
+        Console.WriteLine("The hours will convert to " + howManySeconds(numberToUse15) + " seconds");
 
 
 
@@ -156,8 +159,9 @@ class Challenges
         return number13 == number14;
 
     }
-    public static bool GiveMeSomething(int response1)
+    public static float howManySeconds(int hours)
     {
+        return hours * 3600;
     }
 }
 
