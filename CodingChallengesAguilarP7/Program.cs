@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 class Challenges
 {
@@ -12,26 +13,27 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
+    
+            //Challenge1
+            Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
+            var number1 = Console.ReadLine();
+            int numberToUse1 = int.Parse(number1);
+            Console.WriteLine("Got it, give me your second number.");
+            var number2 = Console.ReadLine();
+            int numberToUse2 = int.Parse(number2);
+            Console.WriteLine("The sum of the number: " + number1 + " and the number " + number2 + " is equal to " + Sum(numberToUse1, numberToUse2));
+       
+            //Challenge2
+            Console.WriteLine("I am going to convert minutes to seconds. \n Please enter a number to convert.");
+            var number3 = Console.ReadLine();
+            int numberToUse3 = int.Parse(number3);
+            Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
+      
+       
 
-        Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
-        var number1 = Console.ReadLine();
-        int numberToUse1 = int.Parse(number1);
+       
 
-        Console.WriteLine("Got it, give me your second number.");
-
-        var number2 = Console.ReadLine();
-        int numberToUse2 = int.Parse(number2);
-
-        Console.WriteLine("The sum of the number: " + number1 + " and the number " + number2 + " is equal to " + Sum(numberToUse1, numberToUse2));
-
-        Sum(numberToUse1, numberToUse2);
-
-        Console.WriteLine("I am going to convert minutes to seconds. \n Please enter a number to convert.");
-
-        var number3 = Console.ReadLine();
-        int numberToUse3 = int.Parse(number3);
-
-        Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
+       
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
@@ -92,15 +94,25 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
-      
+
         // Challenge 11
-    
+
 
         //Challenge 12
-        Console.WriteLine("I will now convert hours into seconds. Enter any number.");
-        var number15 = Console.ReadLine();
-        int numberToUse15 = int.Parse(number15);
-        Console.WriteLine("The hours will convert to " + howManySeconds(numberToUse15) + " seconds");
+
+
+
+        //Challenge 13
+        void Challenge13()
+        {
+            Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
+            var number17 = Console.ReadLine();
+            int number17 = int.Parse(number17);
+            Console.WriteLine("");
+        }
+      
+       
+       
 
 
 
@@ -159,9 +171,14 @@ class Challenges
         return number13 == number14;
 
     }
-    public static float howManySeconds(int hours)
+    public static int howManySeconds(int hours)
     {
         return hours * 3600;
+    }
+    public static int SumPolygon(int number17)
+    {
+        let result = (number17 - 2) * 180;
+        return (result);
     }
 }
 
