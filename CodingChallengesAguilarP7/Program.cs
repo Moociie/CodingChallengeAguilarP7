@@ -103,15 +103,19 @@ class Challenges
 
 
         //Challenge 13
-        void Challenge13()
-        {
+       
             Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
             var number17 = Console.ReadLine();
-            int number17 = int.Parse(number17);
+            int numberToUse17 = int.Parse(number17);
             Console.WriteLine("");
-        }
-      
-       
+
+        //Challenge 14
+        Console.WriteLine("I will now add Edabit to your word of choice. Enter any word.");
+        var input2 = Console.ReadLine();
+        string input2ToUse = (input2);
+        Console.WriteLine("Got it. Your result should now be " + nameString(input2ToUse));
+        
+
        
 
 
@@ -177,8 +181,12 @@ class Challenges
     }
     public static int SumPolygon(int number17)
     {
-        let result = (number17 - 2) * 180;
-        return (result);
+        return (number17 - 2) * 180;
+        
+    }
+    public static string nameString(string input2)
+    {
+        return input2 + "Edabit";
     }
 }
 
