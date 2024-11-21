@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -13,7 +14,29 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
-    
+        //Challenge 13
+        Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
+        var number17 = Console.ReadLine();
+        int numberToUse17 = int.Parse(number17);
+        Console.WriteLine("The sum of the polygon will be" + SumPolygon(numberToUse17)); 
+
+        //Challenge 14
+        Console.WriteLine("I will now add Edabit to your word of choice. Enter any word.");
+        var input2 = Console.ReadLine();
+        string input2ToUse = (input2);
+        Console.WriteLine("Got it. Your result should now be " + nameString(input2ToUse)); 
+
+        //Challenge15
+        Console.WriteLine("I will now check if your statement is true or false depending on your two inputs. \n Please insert true or false. ");
+        var input3 = Console.ReadLine();
+        bool a= bool.Parse(input3);
+        Console.WriteLine("Now enter true or false for your seconnd input.");
+        var input4 = Console.ReadLine();
+        bool b = bool.Parse(input4);
+        Console.WriteLine(And(a, b));
+        Console.WriteLine("And(" + a + "," + b + ") --> "  + And(a, b));
+
+
             //Challenge1
             Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
             var number1 = Console.ReadLine();
@@ -102,24 +125,9 @@ class Challenges
 
 
 
-        //Challenge 13
-       
-            Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
-            var number17 = Console.ReadLine();
-            int numberToUse17 = int.Parse(number17);
-            Console.WriteLine("");
-
-        //Challenge 14
-        Console.WriteLine("I will now add Edabit to your word of choice. Enter any word.");
-        var input2 = Console.ReadLine();
-        string input2ToUse = (input2);
-        Console.WriteLine("Got it. Your result should now be " + nameString(input2ToUse));
         
 
        
-
-
-
 
 
     }
@@ -187,6 +195,17 @@ class Challenges
     public static string nameString(string input2)
     {
         return input2 + "Edabit";
+    }
+    public static bool And(bool a, bool b)
+    {
+        if (a == true && b == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
 
