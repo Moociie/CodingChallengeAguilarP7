@@ -14,6 +14,7 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
+
         //Challenge 13
         Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
         var number17 = Console.ReadLine();
@@ -30,15 +31,24 @@ class Challenges
         Console.WriteLine("I will now check if your statement is true or false depending on your two inputs. \n Please insert true or false. ");
         var input3 = Console.ReadLine();
         bool a= bool.Parse(input3);
-        Console.WriteLine("Now enter true or false for your seconnd input.");
+        Console.WriteLine("Now enter true or false for your second input.");
         var input4 = Console.ReadLine();
         bool b = bool.Parse(input4);
         Console.WriteLine(And(a, b));
         Console.WriteLine("And(" + a + "," + b + ") --> "  + And(a, b));
 
+        //Challenge 16
+        Console.WriteLine("I will now count up the total points for a basketball game with 2-pointers and 3-pointers.\n Insert any number");
+        var number18 = Console.ReadLine();
+        int numberUse18 = int.Parse(number18);
+        Console.WriteLine("Insert your second number");
+        var number19 = Console.ReadLine();
+        int numberUse19 = int.Parse(number19);
+        Console.WriteLine("points(" + number18 + ", " + number19 + ") --> " + points(numberUse18, numberUse19));
 
-            //Challenge1
-            Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
+
+        //Challenge1
+        Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
             var number1 = Console.ReadLine();
             int numberToUse1 = int.Parse(number1);
             Console.WriteLine("Got it, give me your second number.");
@@ -206,6 +216,10 @@ class Challenges
         {
             return false;
         }
+    }
+    public static int points(int number18, int number19)
+    {
+        return number18 * 2 + number19 * 3;
     }
 }
 
