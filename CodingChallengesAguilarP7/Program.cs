@@ -15,6 +15,15 @@ class Challenges
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
 
+        //Challenge17
+        Console.WriteLine("I will calculate the perimeter of a rectangle. \n First, give me a length.");
+        var number20 = Console.ReadLine();
+        int numberUse20 = int.Parse(number20);
+        Console.WriteLine("Perfect. Give me a width.");
+        var number21 = Console.ReadLine();
+        int numberUse21 = int.Parse(number21);
+        Console.WriteLine("FindPerimeter(" + number20 + ", " + number21 + ") --> " + FindPerimeter(numberUse20, numberUse21));
+
         //Challenge 13
         Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
         var number17 = Console.ReadLine();
@@ -220,6 +229,10 @@ class Challenges
     public static int points(int number18, int number19)
     {
         return number18 * 2 + number19 * 3;
+    }
+    public static int FindPerimeter(int number20, int number21)
+    {
+        return (number20 + number21) * 2;
     }
 }
 
