@@ -15,14 +15,12 @@ class Challenges
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
 
-        //Challenge17
-        Console.WriteLine("I will calculate the perimeter of a rectangle. \n First, give me a length.");
-        var number20 = Console.ReadLine();
-        int numberUse20 = int.Parse(number20);
-        Console.WriteLine("Perfect. Give me a width.");
-        var number21 = Console.ReadLine();
-        int numberUse21 = int.Parse(number21);
-        Console.WriteLine("FindPerimeter(" + number20 + ", " + number21 + ") --> " + FindPerimeter(numberUse20, numberUse21));
+        //Challenge18
+        Console.WriteLine("Write any name and I will return a greeting.");
+        var input5 = Console.ReadLine();
+        string input5Use = (input5);
+        Console.WriteLine("HelloName(" + input5 + ") --> " + HelloName(input5Use));
+
 
         //Challenge 13
         Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
@@ -54,6 +52,15 @@ class Challenges
         var number19 = Console.ReadLine();
         int numberUse19 = int.Parse(number19);
         Console.WriteLine("points(" + number18 + ", " + number19 + ") --> " + points(numberUse18, numberUse19));
+
+        //Challenge17
+        Console.WriteLine("I will calculate the perimeter of a rectangle. \n First, give me a length.");
+        var number20 = Console.ReadLine();
+        int numberUse20 = int.Parse(number20);
+        Console.WriteLine("Perfect. Give me a width.");
+        var number21 = Console.ReadLine();
+        int numberUse21 = int.Parse(number21);
+        Console.WriteLine("FindPerimeter(" + number20 + ", " + number21 + ") --> " + FindPerimeter(numberUse20, numberUse21));
 
 
         //Challenge1
@@ -233,6 +240,10 @@ class Challenges
     public static int FindPerimeter(int number20, int number21)
     {
         return (number20 + number21) * 2;
+    }
+    public static string HelloName(string input5)
+    {
+        return "Hello " + input5 + "!";
     }
 }
 
