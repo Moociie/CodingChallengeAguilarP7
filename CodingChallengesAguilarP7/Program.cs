@@ -21,6 +21,31 @@ class Challenges
         string input5Use = (input5);
         Console.WriteLine("HelloName(" + input5 + ") --> " + HelloName(input5Use));
 
+        //Challenge19
+        Console.WriteLine("I will count how many legs ther are in total regarding chickens, pigs, and cows. \n Insert the amount of chickens.");
+        var number22 = Console.ReadLine();
+        int numberUse22 = int.Parse(number22);
+        Console.WriteLine("Insert the number of cows.");
+        var number23 = Console.ReadLine();
+        int numberUse23 = int.Parse(number23);
+        Console.WriteLine("Insert the amount of pigs.");
+        var number24 = Console.ReadLine();
+        int numberUse24 = int.Parse(number24);
+        Console.WriteLine("animals(" + number22 + ", " + number23 + ", " + number24 + ") --> " + animals(numberUse22,numberUse23, numberUse24));
+
+
+        //Challenge20
+        Console.WriteLine("I will now calculate the total football points with losses, winns, and draws. \n Insert the number of wins.");
+        var number25 = Console.ReadLine();
+        int numberUse25 = int.Parse(number25);
+        Console.WriteLine("Insert the number of cows.");
+        var number26 = Console.ReadLine();
+        int numberUse26 = int.Parse(number26);
+        Console.WriteLine("Insert the amount of pigs.");
+        var number27 = Console.ReadLine();
+        int numberUse27 = int.Parse(number27);
+        Console.WriteLine("FootballPoints(" + number25 + ", " + number26 + ", " + number27 + ") --> " + FootballPoints(numberUse25, numberUse26, numberUse27));
+
 
         //Challenge 13
         Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
@@ -244,6 +269,14 @@ class Challenges
     public static string HelloName(string input5)
     {
         return "Hello " + input5 + "!";
+    }
+    public static int animals(int number22, int number23, int number24)
+    {
+        return number22 * 2 + number23 * 4 + number24 * 4;
+    }
+    public static int FootballPoints(int number25, int number26, int number27)
+    {
+        return number25 * 3 + number26 * 1 + number27 * 0;
     }
 }
 
