@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Globalization;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -14,6 +15,13 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
+    
+            //Challenge21
+            Console.WriteLine("Give me a number from 1 through 12 and I will return the corresponding month of that number.");
+            var input6 = Console.ReadLine();
+            int monthnumber = int.Parse(input6);
+            Console.WriteLine("MonthName(" + input6 + ") --> " + MonthName(monthnumber));
+       
 
         //Challenge18
         Console.WriteLine("Write any name and I will return a greeting.");
@@ -277,6 +285,17 @@ class Challenges
     public static int FootballPoints(int number25, int number26, int number27)
     {
         return number25 * 3 + number26 * 1 + number27 * 0;
+    }
+    public static string MonthName(int monthnumber)
+    {  
+        if ( monthnumber >= 1 && monthnumber <= 12)
+        {
+            return CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(monthnumber);
+        }
+        else
+        {
+            return "Invalid Number! Insert a valid number between 1 through 12.";
+        }
     }
 }
 
