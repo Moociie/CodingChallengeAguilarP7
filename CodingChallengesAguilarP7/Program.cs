@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design;
 using System.Globalization;
+using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -15,13 +16,14 @@ class Challenges
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
-    
-            //Challenge21
-            Console.WriteLine("Give me a number from 1 through 12 and I will return the corresponding month of that number.");
-            var input6 = Console.ReadLine();
-            int monthnumber = int.Parse(input6);
-            Console.WriteLine("MonthName(" + input6 + ") --> " + MonthName(monthnumber));
-       
+
+        //challenge22
+        Console.WriteLine("Give me a set of numbers and I will arrange them in order from minimum to  maximum.");
+        var input7 = Console.ReadLine();
+        string numbers = (input7);
+        Console.WriteLine("FindMinMax(" + input7 + ") --> " +  FindMinMax(numbers));
+
+
 
         //Challenge18
         Console.WriteLine("Write any name and I will return a greeting.");
@@ -176,17 +178,17 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
+        //Challenge21
+        Console.WriteLine("Give me a number from 1 through 12 and I will return the corresponding month of that number.");
+        var input6 = Console.ReadLine();
+        int monthnumber = int.Parse(input6);
+        Console.WriteLine("MonthName(" + input6 + ") --> " + MonthName(monthnumber));
 
-        // Challenge 11
-
-
-        //Challenge 12
 
 
 
-        
 
-       
+
 
 
     }
@@ -296,6 +298,10 @@ class Challenges
         {
             return "Invalid Number! Insert a valid number between 1 through 12.";
         }
+    }
+    public static string FindMinMax(string input7)
+    {
+        return
     }
 }
 
