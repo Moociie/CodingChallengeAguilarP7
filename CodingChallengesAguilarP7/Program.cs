@@ -17,11 +17,22 @@ class Challenges
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
 
+        //Challenge23
+        Console.WriteLine("I will now return the sum of the numbers you input. Insert your first number.");
+        var number28 = Console.ReadLine();
+        int numberUse28 = int.Parse(number28);
+        Console.WriteLine("Insert your second number.");
+        var number29 = Console.ReadLine();
+        int numberUse29 = int.Parse(number29);
+        Console.WriteLine("Insert your third number.");
+        var number30 = Console.ReadLine();
+        int numberUse30 = int.Parse(number30);
+        Console.WriteLine("getAbsSum(" + number28 + ", " + number29 + ", " + number30 + ") --> " + getAbsSum(numberUse28, numberUse29, numberUse30));
+
+
         //challenge22
         Console.WriteLine("Give me a set of numbers and I will arrange them in order from minimum to  maximum.");
-        var input7 = Console.ReadLine();
-        string numbers = (input7);
-        Console.WriteLine("FindMinMax(" + input7 + ") --> " +  FindMinMax(numbers));
+       
 
 
 
@@ -299,9 +310,10 @@ class Challenges
             return "Invalid Number! Insert a valid number between 1 through 12.";
         }
     }
-    public static string FindMinMax(string input7)
+
+    public static int getAbsSum(int number28, int number29, int number30)
     {
-        return
+        return number28 + number29 + number30;
     }
 }
 
