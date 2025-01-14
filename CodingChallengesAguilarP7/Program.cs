@@ -29,6 +29,15 @@ class Challenges
         int numberUse30 = int.Parse(number30);
         Console.WriteLine("getAbsSum(" + number28 + ", " + number29 + ", " + number30 + ") --> " + getAbsSum(numberUse28, numberUse29, numberUse30));
 
+        //challenge24
+        Console.WriteLine("I will calculate the total between the exponent and base number. \n Insert a base number.");
+        var number31 = Console.ReadLine();
+        int numberUse31 = int.Parse(number31);
+        Console.WriteLine("Insert your exponent.");
+        var number32 = Console.ReadLine();
+        int numberUse32 = int.Parse(number32);
+        Console.WriteLine("CalculateExponent(" + number31 + ", " + number32 + ") --> " + Math.Pow(numberUse31, numberUse32));
+
 
         //challenge22
         Console.WriteLine("Give me a set of numbers and I will arrange them in order from minimum to  maximum.");
@@ -315,6 +324,7 @@ class Challenges
     {
         return number28 + number29 + number30;
     }
+    
 }
 
 
