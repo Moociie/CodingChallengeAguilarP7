@@ -17,6 +17,15 @@ class Challenges
 
         Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
 
+        //Challenge25
+        Console.WriteLine("Insert a number.I will multiply it by the amount of numbers in total.");
+        var number33 = Console.ReadLine();
+        int numberUse33 = int.Parse(number33);
+        Console.WriteLine("Insert your second number.");
+        var number34 = Console.ReadLine();
+        int numberUse34 = int.Parse(number34);
+        Console.WriteLine("MultiplyByLength([" + number33 + ", " + number34 + "]) --> " + MultiplyByLength(numberUse33, numberUse34));
+
         //Challenge23
         Console.WriteLine("I will now return the sum of the numbers you input. Insert your first number.");
         var number28 = Console.ReadLine();
@@ -324,7 +333,11 @@ class Challenges
     {
         return number28 + number29 + number30;
     }
-    
+    public static Tuple<int,int> MultiplyByLength(int number33, int number34) 
+        {
+        var tuple = new Tuple<int, int>(number33 * 2, number34 * 2);
+        return tuple;
+        } 
 }
 
 
