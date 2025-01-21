@@ -15,7 +15,18 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
-        Console.WriteLine(" Sum \n Convert \n Increase \n CircuitPower \n AgeConvert \n TriArea \n lessThanOrEqualToZero \n lessThan100 \n IsEqual");
+
+        //Challenge26 
+        Console.WriteLine("Insert an array of letters or any word. I will check the Hamming Distance.");
+        var input7 = Console.ReadLine();
+        string inputUse7 = (input7);
+        Console.WriteLine("Insert your next input.");
+         var input8 = Console.ReadLine();
+        string inputUse8 = (input8);
+        Console.WriteLine("HammmingDistance(" + input6 + ", " + input7 + "]) --> " + HammingDistance(inputUse7, inputUse8));
+
+
+
 
         //Challenge25
         Console.WriteLine("Insert a number.I will multiply it by the amount of numbers in total.");
@@ -333,11 +344,17 @@ class Challenges
     {
         return number28 + number29 + number30;
     }
+
     public static Tuple<int,int> MultiplyByLength(int number33, int number34) 
         {
         var tuple = new Tuple<int, int>(number33 * 2, number34 * 2);
         return tuple;
         } 
+
+    public static int HammingDistance(string input7, string input8)
+    {
+     
+    }
 }
 
 
