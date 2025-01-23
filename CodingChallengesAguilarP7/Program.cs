@@ -15,6 +15,14 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
+        //Challenge27
+        Console.WriteLine("Insert any first name of your choice. I will reverse the first name and last name in your output.");
+        var input9 = Console.ReadLine();
+        string inputUse9 = (input9);
+        Console.WriteLine("Insert a last name.");
+        var input10 = Console.ReadLine();
+        string inputUse10 = (input10);
+        Console.WriteLine("NameShuffle(" + input9 + ", " + input10 + ") --> " + NameShuffle(inputUse9, inputUse10));
 
         //Challenge26 
         Console.WriteLine("Insert an array of letters or any word. I will check the Hamming Distance.");
@@ -23,9 +31,7 @@ class Challenges
         Console.WriteLine("Insert your next input.");
          var input8 = Console.ReadLine();
         string inputUse8 = (input8);
-        Console.WriteLine("HammmingDistance(" + input6 + ", " + input7 + "]) --> " + HammingDistance(inputUse7, inputUse8));
-
-
+    
 
 
         //Challenge25
@@ -351,9 +357,9 @@ class Challenges
         return tuple;
         } 
 
-    public static int HammingDistance(string input7, string input8)
+    public static string NameShuffle(string input9, string input10)
     {
-     
+        return input10 + " " + input9;
     }
 }
 
