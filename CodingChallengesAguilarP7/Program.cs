@@ -15,133 +15,8 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
-        //Challenge27
-        Console.WriteLine("Insert any first name of your choice. I will reverse the first name and last name in your output.");
-        var input9 = Console.ReadLine();
-        string inputUse9 = (input9);
-        Console.WriteLine("Insert a last name.");
-        var input10 = Console.ReadLine();
-        string inputUse10 = (input10);
-        Console.WriteLine("NameShuffle(" + input9 + ", " + input10 + ") --> " + NameShuffle(inputUse9, inputUse10));
-
-        //Challenge26 
-        Console.WriteLine("Insert an array of letters or any word. I will check the Hamming Distance.");
-        var input7 = Console.ReadLine();
-        string inputUse7 = (input7);
-        Console.WriteLine("Insert your next input.");
-         var input8 = Console.ReadLine();
-        string inputUse8 = (input8);
-    
-
-
-        //Challenge25
-        Console.WriteLine("Insert a number.I will multiply it by the amount of numbers in total.");
-        var number33 = Console.ReadLine();
-        int numberUse33 = int.Parse(number33);
-        Console.WriteLine("Insert your second number.");
-        var number34 = Console.ReadLine();
-        int numberUse34 = int.Parse(number34);
-        Console.WriteLine("MultiplyByLength([" + number33 + ", " + number34 + "]) --> " + MultiplyByLength(numberUse33, numberUse34));
-
-        //Challenge23
-        Console.WriteLine("I will now return the sum of the numbers you input. Insert your first number.");
-        var number28 = Console.ReadLine();
-        int numberUse28 = int.Parse(number28);
-        Console.WriteLine("Insert your second number.");
-        var number29 = Console.ReadLine();
-        int numberUse29 = int.Parse(number29);
-        Console.WriteLine("Insert your third number.");
-        var number30 = Console.ReadLine();
-        int numberUse30 = int.Parse(number30);
-        Console.WriteLine("getAbsSum(" + number28 + ", " + number29 + ", " + number30 + ") --> " + getAbsSum(numberUse28, numberUse29, numberUse30));
-
-        //challenge24
-        Console.WriteLine("I will calculate the total between the exponent and base number. \n Insert a base number.");
-        var number31 = Console.ReadLine();
-        int numberUse31 = int.Parse(number31);
-        Console.WriteLine("Insert your exponent.");
-        var number32 = Console.ReadLine();
-        int numberUse32 = int.Parse(number32);
-        Console.WriteLine("CalculateExponent(" + number31 + ", " + number32 + ") --> " + Math.Pow(numberUse31, numberUse32));
-
-
-        //challenge22
-        Console.WriteLine("Give me a set of numbers and I will arrange them in order from minimum to  maximum.");
        
-
-
-
-        //Challenge18
-        Console.WriteLine("Write any name and I will return a greeting.");
-        var input5 = Console.ReadLine();
-        string input5Use = (input5);
-        Console.WriteLine("HelloName(" + input5 + ") --> " + HelloName(input5Use));
-
-        //Challenge19
-        Console.WriteLine("I will count how many legs ther are in total regarding chickens, pigs, and cows. \n Insert the amount of chickens.");
-        var number22 = Console.ReadLine();
-        int numberUse22 = int.Parse(number22);
-        Console.WriteLine("Insert the number of cows.");
-        var number23 = Console.ReadLine();
-        int numberUse23 = int.Parse(number23);
-        Console.WriteLine("Insert the amount of pigs.");
-        var number24 = Console.ReadLine();
-        int numberUse24 = int.Parse(number24);
-        Console.WriteLine("animals(" + number22 + ", " + number23 + ", " + number24 + ") --> " + animals(numberUse22,numberUse23, numberUse24));
-
-
-        //Challenge20
-        Console.WriteLine("I will now calculate the total football points with losses, winns, and draws. \n Insert the number of wins.");
-        var number25 = Console.ReadLine();
-        int numberUse25 = int.Parse(number25);
-        Console.WriteLine("Insert the number of cows.");
-        var number26 = Console.ReadLine();
-        int numberUse26 = int.Parse(number26);
-        Console.WriteLine("Insert the amount of pigs.");
-        var number27 = Console.ReadLine();
-        int numberUse27 = int.Parse(number27);
-        Console.WriteLine("FootballPoints(" + number25 + ", " + number26 + ", " + number27 + ") --> " + FootballPoints(numberUse25, numberUse26, numberUse27));
-
-
-        //Challenge 13
-        Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
-        var number17 = Console.ReadLine();
-        int numberToUse17 = int.Parse(number17);
-        Console.WriteLine("The sum of the polygon will be" + SumPolygon(numberToUse17)); 
-
-        //Challenge 14
-        Console.WriteLine("I will now add Edabit to your word of choice. Enter any word.");
-        var input2 = Console.ReadLine();
-        string input2ToUse = (input2);
-        Console.WriteLine("Got it. Your result should now be " + nameString(input2ToUse)); 
-
-        //Challenge15
-        Console.WriteLine("I will now check if your statement is true or false depending on your two inputs. \n Please insert true or false. ");
-        var input3 = Console.ReadLine();
-        bool a= bool.Parse(input3);
-        Console.WriteLine("Now enter true or false for your second input.");
-        var input4 = Console.ReadLine();
-        bool b = bool.Parse(input4);
-        Console.WriteLine(And(a, b));
-        Console.WriteLine("And(" + a + "," + b + ") --> "  + And(a, b));
-
-        //Challenge 16
-        Console.WriteLine("I will now count up the total points for a basketball game with 2-pointers and 3-pointers.\n Insert any number");
-        var number18 = Console.ReadLine();
-        int numberUse18 = int.Parse(number18);
-        Console.WriteLine("Insert your second number");
-        var number19 = Console.ReadLine();
-        int numberUse19 = int.Parse(number19);
-        Console.WriteLine("points(" + number18 + ", " + number19 + ") --> " + points(numberUse18, numberUse19));
-
-        //Challenge17
-        Console.WriteLine("I will calculate the perimeter of a rectangle. \n First, give me a length.");
-        var number20 = Console.ReadLine();
-        int numberUse20 = int.Parse(number20);
-        Console.WriteLine("Perfect. Give me a width.");
-        var number21 = Console.ReadLine();
-        int numberUse21 = int.Parse(number21);
-        Console.WriteLine("FindPerimeter(" + number20 + ", " + number21 + ") --> " + FindPerimeter(numberUse20, numberUse21));
+       
 
 
         //Challenge1
@@ -159,10 +34,6 @@ class Challenges
             int numberToUse3 = int.Parse(number3);
             Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
       
-       
-
-       
-
        
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
@@ -224,11 +95,136 @@ class Challenges
         int numberToUse14 = int.Parse(number14);
         Console.WriteLine("I have determined that the solution is " + IsEqual(numberToUse13, numberToUse14));
 
+        //Challenge 13
+        Console.WriteLine("Now I will calculate the sum of a polygon. Choose a number greater than 3.");
+        var number17 = Console.ReadLine();
+        int numberToUse17 = int.Parse(number17);
+        Console.WriteLine("The sum of the polygon will be" + SumPolygon(numberToUse17));
+
+        //Challenge 14
+        Console.WriteLine("I will now add Edabit to your word of choice. Enter any word.");
+        var input2 = Console.ReadLine();
+        string input2ToUse = (input2);
+        Console.WriteLine("Got it. Your result should now be " + nameString(input2ToUse));
+
+
+        //Challenge15
+        Console.WriteLine("I will now check if your statement is true or false depending on your two inputs. \n Please insert true or false. ");
+        var input3 = Console.ReadLine();
+        bool a = bool.Parse(input3);
+        Console.WriteLine("Now enter true or false for your second input.");
+        var input4 = Console.ReadLine();
+        bool b = bool.Parse(input4);
+        Console.WriteLine(And(a, b));
+        Console.WriteLine("And(" + a + "," + b + ") --> " + And(a, b));
+
+        //Challenge 16
+        Console.WriteLine("I will now count up the total points for a basketball game with 2-pointers and 3-pointers.\n Insert any number");
+        var number18 = Console.ReadLine();
+        int numberUse18 = int.Parse(number18);
+        Console.WriteLine("Insert your second number");
+        var number19 = Console.ReadLine();
+        int numberUse19 = int.Parse(number19);
+        Console.WriteLine("points(" + number18 + ", " + number19 + ") --> " + points(numberUse18, numberUse19));
+
+        //Challenge17
+        Console.WriteLine("I will calculate the perimeter of a rectangle. \n First, give me a length.");
+        var number20 = Console.ReadLine();
+        int numberUse20 = int.Parse(number20);
+        Console.WriteLine("Perfect. Give me a width.");
+        var number21 = Console.ReadLine();
+        int numberUse21 = int.Parse(number21);
+        Console.WriteLine("FindPerimeter(" + number20 + ", " + number21 + ") --> " + FindPerimeter(numberUse20, numberUse21));
+
+        //Challenge18
+        Console.WriteLine("Write any name and I will return a greeting.");
+        var input5 = Console.ReadLine();
+        string input5Use = (input5);
+        Console.WriteLine("HelloName(" + input5 + ") --> " + HelloName(input5Use));
+
+        //Challenge19
+        Console.WriteLine("I will count how many legs ther are in total regarding chickens, pigs, and cows. \n Insert the amount of chickens.");
+        var number22 = Console.ReadLine();
+        int numberUse22 = int.Parse(number22);
+        Console.WriteLine("Insert the number of cows.");
+        var number23 = Console.ReadLine();
+        int numberUse23 = int.Parse(number23);
+        Console.WriteLine("Insert the amount of pigs.");
+        var number24 = Console.ReadLine();
+        int numberUse24 = int.Parse(number24);
+        Console.WriteLine("animals(" + number22 + ", " + number23 + ", " + number24 + ") --> " + animals(numberUse22, numberUse23, numberUse24));
+
+
+        //Challenge20
+        Console.WriteLine("I will now calculate the total football points with losses, winns, and draws. \n Insert the number of wins.");
+        var number25 = Console.ReadLine();
+        int numberUse25 = int.Parse(number25);
+        Console.WriteLine("Insert the number of cows.");
+        var number26 = Console.ReadLine();
+        int numberUse26 = int.Parse(number26);
+        Console.WriteLine("Insert the amount of pigs.");
+        var number27 = Console.ReadLine();
+        int numberUse27 = int.Parse(number27);
+        Console.WriteLine("FootballPoints(" + number25 + ", " + number26 + ", " + number27 + ") --> " + FootballPoints(numberUse25, numberUse26, numberUse27));
+
         //Challenge21
         Console.WriteLine("Give me a number from 1 through 12 and I will return the corresponding month of that number.");
         var input6 = Console.ReadLine();
         int monthnumber = int.Parse(input6);
         Console.WriteLine("MonthName(" + input6 + ") --> " + MonthName(monthnumber));
+
+        //challenge22
+        Console.WriteLine("Give me a set of numbers and I will arrange them in order from minimum to  maximum.");
+
+        //Challenge23
+        Console.WriteLine("I will now return the sum of the numbers you input. Insert your first number.");
+        var number28 = Console.ReadLine();
+        int numberUse28 = int.Parse(number28);
+        Console.WriteLine("Insert your second number.");
+        var number29 = Console.ReadLine();
+        int numberUse29 = int.Parse(number29);
+        Console.WriteLine("Insert your third number.");
+        var number30 = Console.ReadLine();
+        int numberUse30 = int.Parse(number30);
+        Console.WriteLine("getAbsSum(" + number28 + ", " + number29 + ", " + number30 + ") --> " + getAbsSum(numberUse28, numberUse29, numberUse30));
+
+        //challenge24
+        Console.WriteLine("I will calculate the total between the exponent and base number. \n Insert a base number.");
+        var number31 = Console.ReadLine();
+        int numberUse31 = int.Parse(number31);
+        Console.WriteLine("Insert your exponent.");
+        var number32 = Console.ReadLine();
+        int numberUse32 = int.Parse(number32);
+        Console.WriteLine("CalculateExponent(" + number31 + ", " + number32 + ") --> " + Math.Pow(numberUse31, numberUse32));
+
+
+        //Challenge25
+        Console.WriteLine("Insert a number.I will multiply it by the amount of numbers in total.");
+        var number33 = Console.ReadLine();
+        int numberUse33 = int.Parse(number33);
+        Console.WriteLine("Insert your second number.");
+        var number34 = Console.ReadLine();
+        int numberUse34 = int.Parse(number34);
+        Console.WriteLine("MultiplyByLength([" + number33 + ", " + number34 + "]) --> " + MultiplyByLength(numberUse33, numberUse34));
+
+        //Challenge26 
+        Console.WriteLine("Insert an array of letters or any word. I will check the Hamming Distance.");
+        var input7 = Console.ReadLine();
+        string inputUse7 = (input7);
+        Console.WriteLine("Insert your next input.");
+        var input8 = Console.ReadLine();
+        string inputUse8 = (input8);
+        Console.WriteLine("HammingDistance(" + input7 + ", " + input8 + ") --> " + HammingDistance(inputUse7, inputUse8));
+
+
+        //Challenge27
+        Console.WriteLine("Insert any first name of your choice. I will reverse the first name and last name in your output.");
+        var input9 = Console.ReadLine();
+        string inputUse9 = (input9);
+        Console.WriteLine("Insert a last name.");
+        var input10 = Console.ReadLine();
+        string inputUse10 = (input10);
+        Console.WriteLine("NameShuffle(" + input9 + ", " + input10 + ") --> " + NameShuffle(inputUse9, inputUse10));
 
 
 
@@ -356,6 +352,19 @@ class Challenges
         var tuple = new Tuple<int, int>(number33 * 2, number34 * 2);
         return tuple;
         } 
+    public static int HammingDistance(string input7, string input8)
+    {
+        var count = 0;
+        if (input7.Length > input8.Length || input7.Length < input8.Length) { throw new ArgumentException(); }
+       
+        if (input7.Length == 0 || input8.Length == 0) { count = 0; }
+        else if (input7 == input8) { count = 0; }
+        else
+        {
+            count += input7.Where((t, i) => t != input8[i]).Count();
+        }
+        return count;
+    }
 
     public static string NameShuffle(string input9, string input10)
     {
