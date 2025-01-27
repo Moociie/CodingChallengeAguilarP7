@@ -15,9 +15,16 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
-       
-       
 
+
+        //Challenge28
+        Console.WriteLine("I will determine the smallest number between two numbers. \n Put any number as your first input.");
+        var number35 = Console.ReadLine();
+        int numberToUse35 = int.Parse(number35);
+        Console.WriteLine("Got it, give me your second number.");
+        var number36 = Console.ReadLine();
+        int numberToUse36 = int.Parse(number36);
+        Console.WriteLine("smallerNum(" + number35 + ", " + number36 + ") --> " + smallerNum(numberToUse35, numberToUse36));
 
         //Challenge1
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
@@ -369,6 +376,21 @@ class Challenges
     public static string NameShuffle(string input9, string input10)
     {
         return input10 + " " + input9;
+    }
+    public static int smallerNum(int number35, int number36)
+    {
+        if ( number35 < number36)
+        {
+            return number35;
+        }
+        else
+        {
+            return number36;
+        }
+        if ( number35 == number36)
+        {
+            return number35;
+        }
     }
 }
 
