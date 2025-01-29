@@ -15,33 +15,29 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
+        //Challenge29
+        Console.WriteLine("Give me any number and I will return the factorial of it.");
+        var number37 = Console.ReadLine();
+        int numberToUse37 = int.Parse(number37);
+        Console.WriteLine("smallerNum(" + number37 + ") --> " + Factorial(numberToUse37));
 
-
-        //Challenge28
-        Console.WriteLine("I will determine the smallest number between two numbers. \n Put any number as your first input.");
-        var number35 = Console.ReadLine();
-        int numberToUse35 = int.Parse(number35);
-        Console.WriteLine("Got it, give me your second number.");
-        var number36 = Console.ReadLine();
-        int numberToUse36 = int.Parse(number36);
-        Console.WriteLine("smallerNum(" + number35 + ", " + number36 + ") --> " + smallerNum(numberToUse35, numberToUse36));
-
+      
         //Challenge1
         Console.WriteLine("We are going to use the number adder today called sum. Please give me two numbers.");
-            var number1 = Console.ReadLine();
-            int numberToUse1 = int.Parse(number1);
-            Console.WriteLine("Got it, give me your second number.");
-            var number2 = Console.ReadLine();
-            int numberToUse2 = int.Parse(number2);
-            Console.WriteLine("The sum of the number: " + number1 + " and the number " + number2 + " is equal to " + Sum(numberToUse1, numberToUse2));
-       
-            //Challenge2
-            Console.WriteLine("I am going to convert minutes to seconds. \n Please enter a number to convert.");
-            var number3 = Console.ReadLine();
-            int numberToUse3 = int.Parse(number3);
-            Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
-      
-       
+        var number1 = Console.ReadLine();
+        int numberToUse1 = int.Parse(number1);
+        Console.WriteLine("Got it, give me your second number.");
+        var number2 = Console.ReadLine();
+        int numberToUse2 = int.Parse(number2);
+        Console.WriteLine("The sum of the number: " + number1 + " and the number " + number2 + " is equal to " + Sum(numberToUse1, numberToUse2));
+
+        //Challenge2
+        Console.WriteLine("I am going to convert minutes to seconds. \n Please enter a number to convert.");
+        var number3 = Console.ReadLine();
+        int numberToUse3 = int.Parse(number3);
+        Console.WriteLine("If I convert " + number3 + " minutes to seconds, I get " + Convert(numberToUse3) + " seconds");
+
+
 
         Console.WriteLine("Please insert a number. I will add 1 to that number.");
 
@@ -233,10 +229,14 @@ class Challenges
         string inputUse10 = (input10);
         Console.WriteLine("NameShuffle(" + input9 + ", " + input10 + ") --> " + NameShuffle(inputUse9, inputUse10));
 
-
-
-
-
+        //Challenge28
+        Console.WriteLine("I will determine the smallest number between two numbers. \n Put any number as your first input.");
+        var number35 = Console.ReadLine();
+        int numberToUse35 = int.Parse(number35);
+        Console.WriteLine("Got it, give me your second number.");
+        var number36 = Console.ReadLine();
+        int numberToUse36 = int.Parse(number36);
+        Console.WriteLine("smallerNum(" + number35 + ", " + number36 + ") --> " + smallerNum(numberToUse35, numberToUse36));
 
 
 
@@ -300,7 +300,7 @@ class Challenges
     public static int SumPolygon(int number17)
     {
         return (number17 - 2) * 180;
-        
+
     }
     public static string nameString(string input2)
     {
@@ -338,8 +338,8 @@ class Challenges
         return number25 * 3 + number26 * 1 + number27 * 0;
     }
     public static string MonthName(int monthnumber)
-    {  
-        if ( monthnumber >= 1 && monthnumber <= 12)
+    {
+        if (monthnumber >= 1 && monthnumber <= 12)
         {
             return CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(monthnumber);
         }
@@ -354,16 +354,16 @@ class Challenges
         return number28 + number29 + number30;
     }
 
-    public static Tuple<int,int> MultiplyByLength(int number33, int number34) 
-        {
+    public static Tuple<int, int> MultiplyByLength(int number33, int number34)
+    {
         var tuple = new Tuple<int, int>(number33 * 2, number34 * 2);
         return tuple;
-        } 
+    }
     public static int HammingDistance(string input7, string input8)
     {
         var count = 0;
         if (input7.Length > input8.Length || input7.Length < input8.Length) { throw new ArgumentException(); }
-       
+
         if (input7.Length == 0 || input8.Length == 0) { count = 0; }
         else if (input7 == input8) { count = 0; }
         else
@@ -379,7 +379,7 @@ class Challenges
     }
     public static int smallerNum(int number35, int number36)
     {
-        if ( number35 < number36)
+        if (number35 < number36)
         {
             return number35;
         }
@@ -387,11 +387,22 @@ class Challenges
         {
             return number36;
         }
-        if ( number35 == number36)
+        if (number35 == number36)
         {
             return number35;
         }
     }
+    public static int Factorial(int number37)
+    {
+        if (number37 == 0)
+        {
+            return 1;
+
+        }
+        else
+            return number37 * Factorial(number37 - 1);
+    }
 }
+
 
 
