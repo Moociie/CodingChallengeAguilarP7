@@ -15,6 +15,12 @@ class Challenges
         //Welcome the user to my program
         Console.WriteLine("Welcome to my coding challenge program! I will be making a variety of functions for you to use! \n Please pick one.");
 
+        //Challenge30
+        Console.WriteLine("Input a word of your choice and I will calculate the amount of vowels.");
+        var input11 = Console.ReadLine();
+        string inputUse11 = (input11);
+        Console.WriteLine("CountVowels(" + input11 + ") --> " + CountVowels(inputUse11));
+
         //Challenge29
         Console.WriteLine("Give me any number and I will return the factorial of it.");
         var number37 = Console.ReadLine();
@@ -401,6 +407,16 @@ class Challenges
         }
         else
             return number37 * Factorial(number37 - 1);
+    }
+    public static int CountVowels(string input11)
+    {
+        int total = 1;
+
+            if (input11.Contains("a") || input11.Contains("e") || input11.Contains("i") || input11.Contains("o") || input11.Contains("u"))
+            {
+              total++;
+            }
+        return total;
     }
 }
 
